@@ -1,86 +1,81 @@
-# Project Template Generator
+# 📂 Auto File Sorter
 
-A Python script to quickly create project folder structures from predefined templates.  
-Instead of manually setting up folders and files every time, use this generator to save time.  
-
----
-
-## Features
-- Choose from predefined project templates (`templates.json`).
-- Automatically create folders, subfolders, and files.
-- Supports multiple copies of the same project template.
-- Allows custom project names and target directory.
-- Handles invalid inputs gracefully.
+A simple Python script that automatically organizes files in a given directory into categorized folders based on their extensions.  
 
 ---
 
-## Requirements
+## 🚀 Features
+- Sorts files into categories:
+  - **Pictures** (`.jpg`, `.png`, `.gif`, etc.)
+  - **Videos** (`.mp4`, `.mkv`, `.avi`, etc.)
+  - **Audios** (`.mp3`, `.wav`, `.flac`, etc.)
+  - **Documents** (`.pdf`, `.docx`, `.txt`, `.csv`, etc.)
+  - **Applications** (`.exe`, `.apk`, `.msi`, etc.)
+  - **Archives** (`.zip`, `.rar`, `.7z`, etc.)
+  - **Others** (for unrecognized file types)
+- Creates folders automatically if they don’t exist.
+- Prevents moving the script file itself.
+- Works on **Windows, Linux, and macOS**.
+
+---
+
+## 🛠️ Requirements
 - Python 3.x
-- `templates.json` file (included in the project)
+- Built-in libraries only: `os`, `shutil`
 
 ---
 
-## Usage
+## 📥 Installation, ▶️ Usage, and Example (single terminal)
 
-### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/project-template-generator.git
-cd project-template-generator
-```
+# 1) Clone the repository
+git clone https://github.com/your-username/auto-file-sorter.git
 
-### 2. Run the Script
-```bash
-python generator.py
-```
+# 2) Enter the project folder
+cd auto-file-sorter
 
-### 3. Example Run
-```text
-Hello, Welcome to the Project Template Generator (Made by Abdullah): 
-1 → Python Project
-2 → Web Project
-3 → React Project
-...
-Which template would you like to choose (1-6)? 1
-How many copies do you need ? (Default : 1): 2
-Enter your project folder name: MyApp
-Enter the path where you want to create the project folder (leave blank for current directory): 
+# 3) Check Python version
+python --version
+Python 3.10.12
 
-Project(s) Template created successfully at: /your/path
-```
+# 4) Run the script
+python auto_file_sorter.py
+Welcome to the Sorting program (Made by Abdullah)
 
----
+# 5) Provide the directory to sort when prompted
+Which directory/folder do you want to sort: C:\Users\YourName\Downloads
 
-## Customizing Templates
+# 6) Example result
+Sorting done Successfully !
+Exiting ...
 
-Templates are stored in the `templates.json` file.  
-Each template can define:
+# 7) Example directory BEFORE sorting
+Downloads/
+├── song.mp3
+├── picture.jpg
+├── movie.mkv
+├── notes.pdf
+├── setup.exe
 
-* **folder** → main folder name  
-* **subfolders** → list of subfolders  
-* **files** → files to be created with optional starter content  
+# 8) Example directory AFTER sorting
+Downloads/
+├── Audios/
+│   └── song.mp3
+├── Pictures/
+│   └── picture.jpg
+├── Videos/
+│   └── movie.mkv
+├── Documents/
+│   └── notes.pdf
+├── Applications/
+│   └── setup.exe
 
-**Example (`templates.json`):**
-```json
-{
-  "1": {
-    "folder": "PythonProject",
-    "subfolders": ["src", "tests"],
-    "files": {
-      "README.md": "# Python Project",
-      "main.py": "print('Hello World')"
-    }
-  }
-}
-```
+# --- Contributing ---
+# Contributions, issues, and feature requests are welcome!
+# Feel free to fork the repo and submit a pull request.
 
----
+# --- License ---
+# This project is licensed under the MIT License – you’re free to use and modify it.
 
-## Future Improvements
-- Add argparse support for CLI arguments.
-- More built-in templates.
-- Option to save custom templates directly from the script.
-
----
-
-## Author
-Made with ❤️ by Abdullah
+# --- Author ---
+# 👨‍💻 Made with ❤️ by Abdullah
