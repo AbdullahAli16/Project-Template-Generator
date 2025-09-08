@@ -24,7 +24,7 @@ A user-friendly desktop application that creates predefined folder structures an
 *The main window showing template selection, live preview of folder structure, and all customization options*
 
 ### Template Selection Dropdown
-<img src="screenshots/template-dropdown.PNG" width="400">
+<img src="screenshots/templates-dropdown.PNG" width="400">
 
 *Available project templates including Python, Web, Flask, Data Science, Node.js, and React projects*
 
