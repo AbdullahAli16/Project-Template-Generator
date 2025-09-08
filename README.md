@@ -19,17 +19,17 @@ A user-friendly desktop application that creates predefined folder structures an
 ## 🖼️ Screenshots
 
 ### Main Interface with Template Preview
-<img src="screenshots/main-interface.png" width="700">
+<img src="screenshots/main-interface.PNG" width="700">
 
 *The main window showing template selection, live preview of folder structure, and all customization options*
 
 ### Template Selection Dropdown
-<img src="screenshots/template-dropdown.png" width="400">
+<img src="screenshots/template-dropdown.PNG" width="400">
 
 *Available project templates including Python, Web, Flask, Data Science, Node.js, and React projects*
 
 ### Input Fields and Generation
-<img src="screenshots/input-section.png" width="600">
+<img src="screenshots/input-section.PNG" width="600">
 
 *Customization options for project copies, naming, destination path, and the generate button*
 ## 🚀 Getting Started
